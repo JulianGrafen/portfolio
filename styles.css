@@ -1,10 +1,42 @@
 body {
-    background-color: rgba(4, 181, 240, 0.566);
+    background-color: #64b1ffeb;
+    margin: 0;
   }
 h1 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: black;
+    margin-top: 5rem;
   }
 
 p {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
+position: fixed;
+top: 0;
+width: 100%;
+}
+
+li {
+    float: left;
+  }
+  
+li a {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: #e733ff3c;
+
+}
