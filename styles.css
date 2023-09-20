@@ -2,10 +2,7 @@ body {
     background-color: #474747;
     width: 100vw; /* Use the full viewport width */
   height: 100vh; /* Use the full viewport height */
-    ;
-    overflow-x: hidden;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    
     margin: 0;
   }
 
@@ -16,6 +13,15 @@ body {
     height: 3vw;
     background: #6E85FF;
   }
+
+  .projectImgBlock {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    width: 50%; /* Use 100% instead of full */
+    height: 3vw;
+    background: #6E85FF;
+  }
+  
   
   h2 {
     color: #FFF;
@@ -29,6 +35,7 @@ body {
   div.b {
     text-align: left;
   }
+
 img{
   display: flex;
   position: absolute;
@@ -51,25 +58,31 @@ img{
   }
   
 .block2{
-  display: flex;
-  width: 100%; /* Use 100% instead of full */
+  width:100%; /* Use 100% instead of full */
   height: 100vw;
   background: #6E85FF;
 }
  
 .h1a{
   margin-top: 0px;
+  margin-left: 50vw;
   color: black;
   font-family: Verdana;
   font-size: 8.5vw;
 }
   
-  
-.placeholderImg {
+.imgContainerRight{
   display: flex;
   position: relative;
-  left: 0;
-  width: 10vw;
-  height: 10vw;
-  
+  margin-top: 0;
+  margin-right: 10vw;
+
+
+}
+
+.imgContainerLeft{
+display: flex;
+position: absolute;
+margin-top: 39vw;
+margin-left: -60%;
 }
