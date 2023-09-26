@@ -6,13 +6,18 @@ body {
     overflow: hidden;
   }
 
+  .button{
+    background-color: #5d5252;
+    margin-top: -250px;
+  }
+
   .nameContainer{
     display: flex;
     position: absolute;
     left: 0px;
     top: 0px;
     border:2px solid green;
-    width: 100vw;
+    width: 100%;
     justify-content: space-evenly;
     flex-wrap: nowrap;
   }
@@ -50,7 +55,7 @@ body {
  
   .projectContainer{
     display: flex;
-    border: 2px solid green;
+    border: 2px solid red;
     position: relative;
     justify-content: space-evenly;
     padding-top: 20rem;
@@ -75,7 +80,7 @@ body {
  
  
   .project{
-    border: 2px solid green;;
+    border: 2px solid red;;
     font-family: Arial, Helvetica, sans-serif;
     animation: slide-in 1000ms;
     width: 100px;
@@ -109,11 +114,13 @@ body {
     font-family: Arial;
     color: white;
     animation: fadeIn 5s;
+    margin-left: 7rem;
     
   }
   .fade-in-textB {
     font-family: Arial;
     animation: fadeIn 7s;
+    padding-left: 2rem;
     
   }
   .fade-in-textC {
