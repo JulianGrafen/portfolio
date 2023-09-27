@@ -52,6 +52,10 @@ body {
     
   }
 
+  .h2Animation:hover::after{
+
+  }
+
  
   .projectContainer{
     display: flex;
@@ -79,10 +83,8 @@ body {
   }
  
  
-  .project{
-    border: 2px solid red;;
+  .project1{
     font-family: Arial, Helvetica, sans-serif;
-    animation: slide-in 1000ms;
     width: 100px;
     height: auto;
     color:black;
@@ -95,15 +97,46 @@ body {
     -webkit-backdrop-filter: blur(4.8px);
     border: 1px solid rgba(255, 255, 255, 0.04);
     transition: all 2s ease;
+  }
 
+   
+  .project2{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+    height: auto;
+    color:black;
+    animation: slide-in 3s;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.31);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    -webkit-backdrop-filter: blur(4.8px);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    transition: all 2s ease;
+  }
 
+ 
+  .project3{
+    font-family: Arial, Helvetica, sans-serif;
+    animation: slide-in 1000ms;
+    animation: slide-back 1000ms;
+    width: 100px;
+    height: auto;
+    color:black;
+    animation: slide-in 3s;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.31);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    -webkit-backdrop-filter: blur(4.8px);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    transition: all 2s ease;
   }
 
   
-  .transform-active{
-    height: 10rem;
-    width: 60rem;
-  }
+ 
   
   
   body {
@@ -163,6 +196,8 @@ body {
     border:2px solid green;;
     width: fit-content;
     height: fit-content;
+    transition: all 2s ease;
+
   }
 
 
@@ -190,6 +225,8 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 12rem;
+  transition: all 2s ease;
+
 
 }
 
@@ -216,11 +253,13 @@ display: flex;
 }
 
 @keyframes slide-in {
-  from{ transform: translateY(-100%)}
+  from{
+    transform: translateY(-100%)}
   to{transform: translateY(0%)}
 }
 @keyframes slide-back {
-  from{ transform: translateY(0%)}
+  from{ 
+    transform: translateY(0%)}
   to{transform: translateY(-100%)}
   
 }
