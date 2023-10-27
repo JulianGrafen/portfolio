@@ -1,25 +1,28 @@
 body {
-    background-color: #474747;
+  background-color: #726F7E;
     width: 100%; /* Use the full viewport width */
     height: 100vw; /* Use the full viewport height */
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   .button{
-    background-color: #5d5252;
+    background-color: #474747
+    ;
     margin-top: -250px;
   }
 
   .nameContainer{
     display: flex;
     position: absolute;
-    left: 0px;
-    top: 0px;
-    border:2px solid green;
-    width: 100%;
     justify-content: space-evenly;
-    flex-wrap: nowrap;
+    top: 0px;
+    width: 110%;
+    background-color: #575A5E;
+    -webkit-box-shadow: 0px 1px 17px 6px rgba(0,0,0,0.81); 
+    box-shadow: 0px 1px 17px 6px rgba(0,0,0,0.81);
+
+
   }
 
 
@@ -30,7 +33,6 @@ body {
     font-size: 10em ;
     color: aliceblue;
     position: absolute;
-    border:2px solid green;;
     width: fit-content;
     height: fit-content;
     z-index: 1;
@@ -52,10 +54,7 @@ body {
     
   }
 
-  .h2Animation:hover::after{
-
-  }
-
+  
  
   .projectContainer{
     display: flex;
@@ -83,8 +82,10 @@ body {
  
  
   .project1{
+    justify-content: center;
+    display: flex;
     font-family: Arial, Helvetica, sans-serif;
-    width: 100px;
+    width: 200px;
     height: auto;
     color:black;
     animation: slide-in 3s;
@@ -118,10 +119,11 @@ body {
 
  
   .project3{
+    justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     animation: slide-in 1000ms;
     animation: slide-back 1000ms;
-    width: 100px;
+    width: 120px;
     height: auto;
     color:black;
     animation: slide-in 3s;
@@ -135,9 +137,11 @@ body {
     transition: all 2s ease;
   }
 
-  
+  .projectText{
+    display:none;
+  }
  
-  
+
   
   body {
     display: flex;
@@ -156,7 +160,6 @@ body {
     overflow: hidden;
     position: relative;
     width: 25rem;
-    border:2px solid green;;
 
   }
 
@@ -170,12 +173,14 @@ body {
   .fade-in-textB {
     font-family: Arial;
     animation: fadeIn 7s;
-    padding-left: 2rem;
+    width: fit-content;
+    margin-left: 12rem;
     
   }
   .fade-in-textC {
     font-family: Arial;
     animation: fadeIn 9s;
+    margin-left: 5rem;
     
   }
   .fade-in-textD {
@@ -193,7 +198,6 @@ body {
     font-size: 10em ;
     color: aliceblue;
     position: absolute;
-    border:2px solid green;;
     width: fit-content;
     height: fit-content;
     transition: all 2s ease;
@@ -212,44 +216,95 @@ body {
     transition: all 0.3s;
     }
 
-   
-
   
 
 .personalContainer{
-  position: absolute;
+  margin-top: 35rem;
   display: none;
-  border: 2px solid red;
-  margin-top:35rem;
   width: 90rem;
   align-items: center;
   justify-content: space-between;
   height: 12rem;
   transition: all 2s ease;
-
-
-}
-
-.personalContainer:hover{
-display: flex;
 }
 
 
+ul {
+  list-style-type: none;
+}
 
 
-.personal1{
+.personalBooks{
   animation: slide-out-right 3s;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
+  font-size: 1em;
+  background: rgba(255, 255, 255, 0.31);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    -webkit-backdrop-filter: blur(4.8px);
+    border: 1px solid rgba(255, 255, 255, 0.04);
 
 
 }
-.personal{
+.personalStudy{
   animation: slide-out-left 3s;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
+  font-size: 1em;
+  background: rgba(255, 255, 255, 0.31);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    -webkit-backdrop-filter: blur(4.8px);
+    border: 1px solid rgba(255, 255, 255, 0.04);
 
 
+}
+
+.myTools{
+  margin-top: 8rem;
+  
+  position:absolute;
+  transition: all 2s ease;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5em;
+
+}
+
+.tools-content-container{
+  border: 2px solid red;
+  position: absolute;
+  background-color: #575A5E;
+
+  display: flex;
+  justify-content: center;
+  margin-top: 100rem;
+  width: 110%;
+
+}
+
+.tools-list li{
+  border: 2px solid white;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+.tools-list{
+  margin-top: 15rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 5px; 
+  flex-wrap: wrap;
+  align-content: stretch;
+  width: 70%;
+  max-width: 1030px;
+}
+
+.tools-list li img {
+  height: 80px;
+  width: 80px;
+  margin: 15px;
 }
 
 @keyframes slide-in {
