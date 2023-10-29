@@ -3,21 +3,18 @@ body {
     width: 100%; /* Use the full viewport width */
     height: 100vw; /* Use the full viewport height */
     margin: 0;
+        padding: 0;
+
     overflow-x: hidden;
   }
 
-  .button{
-    background-color: #474747
-    ;
-    margin-top: -250px;
-  }
 
   .nameContainer{
     display: flex;
     position: absolute;
     justify-content: space-evenly;
     top: 0px;
-    width: 110%;
+    width: 105%;
     background-color: #575A5E;
     -webkit-box-shadow: 0px 1px 17px 6px rgba(0,0,0,0.81); 
     box-shadow: 0px 1px 17px 6px rgba(0,0,0,0.81);
@@ -54,7 +51,29 @@ body {
     
   }
 
+  .projectText1{
+    display: block;
+    border: 2px solid red;
+    margin-top: -1.5rem;
+    animation: fadeIn 3s;
+  }
   
+  .projectText2{
+    margin-top: -1.4rem;
+    position: relative;
+    border: 2px solid red;
+    animation: fadeIn 3s;
+
+  }
+  
+  .projectText3{
+    margin-top: -2rem;
+    position: absolute;
+    position: relative;
+    border: 2px solid red;
+    animation: fadeIn 3s;
+
+  }
  
   .projectContainer{
     display: flex;
@@ -82,11 +101,8 @@ body {
  
  
   .project1{
-    justify-content: center;
-    display: flex;
     font-family: Arial, Helvetica, sans-serif;
-    width: 200px;
-    height: auto;
+    justify-content: center;
     color:black;
     animation: slide-in 3s;
     font-size: 1rem;
@@ -103,8 +119,7 @@ body {
    
   .project2{
     font-family: Arial, Helvetica, sans-serif;
-    width: 100px;
-    height: auto;
+    justify-content: center;
     color:black;
     animation: slide-in 3s;
     font-size: 1rem;
@@ -123,8 +138,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     animation: slide-in 1000ms;
     animation: slide-back 1000ms;
-    width: 120px;
-    height: auto;
+  
     color:black;
     animation: slide-in 3s;
     font-size: 1rem;
@@ -137,10 +151,7 @@ body {
     transition: all 2s ease;
   }
 
-  .projectText{
-    display:none;
-  }
- 
+
 
   
   body {
@@ -279,7 +290,7 @@ ul {
   display: flex;
   justify-content: center;
   margin-top: 100rem;
-  width: 110%;
+  width: 105%;
 
 }
 
